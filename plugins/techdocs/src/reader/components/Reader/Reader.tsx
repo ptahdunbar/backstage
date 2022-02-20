@@ -21,6 +21,7 @@ import { EntityName } from '@backstage/catalog-model';
 
 import { TechDocsSearch } from '../TechDocsSearch';
 import { TechDocsStateIndicator } from '../TechDocsStateIndicator';
+
 import { useTechDocsReader, TechDocsReaderProvider } from './context';
 
 const useStyles = makeStyles(theme => ({
