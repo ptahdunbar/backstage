@@ -16,11 +16,10 @@
 
 import { Entity } from '@backstage/catalog-model';
 import { StorageApi } from '@backstage/core-plugin-api';
-import { DefaultStarredEntitiesApi } from '@backstage/plugin-catalog';
 import { MockStorageApi, TestApiProvider } from '@backstage/test-utils';
 import { act, renderHook } from '@testing-library/react-hooks';
 import React, { PropsWithChildren } from 'react';
-import { starredEntitiesApiRef } from '../apis';
+import { starredEntitiesApiRef, MockStarredEntitiesApi } from '../apis';
 import { useStarredEntities } from './useStarredEntities';
 
 describe('useStarredEntities', () => {
@@ -48,12 +47,7 @@ describe('useStarredEntities', () => {
     mockStorage = MockStorageApi.create();
     wrapper = ({ children }: PropsWithChildren<{}>) => (
       <TestApiProvider
-        apis={[
-          [
-            starredEntitiesApiRef,
-            new DefaultStarredEntitiesApi({ storageApi: mockStorage }),
-          ],
-        ]}
+        apis={[[starredEntitiesApiRef, new MockStarredEntitiesApi()]]}
       >
         {children}
       </TestApiProvider>
