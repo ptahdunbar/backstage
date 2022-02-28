@@ -1,5 +1,14 @@
 # @backstage/core-components
 
+## 0.8.11
+
+### Patch Changes
+
+- 64b430f80d: chore(deps): bump `react-text-truncate` from 0.17.0 to 0.18.0
+- 689840dcbe: Added ability for SidebarSubmenuItem to handle external links correctly via the "to" prop
+- Updated dependencies
+  - @backstage/core-plugin-api@0.8.0
+
 ## 0.8.10
 
 ### Patch Changes

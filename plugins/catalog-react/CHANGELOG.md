@@ -1,5 +1,16 @@
 # @backstage/plugin-catalog-react
 
+## 0.7.1
+
+### Patch Changes
+
+- 8f0e8e039b: Deprecated `getEntityMetadataEditUrl` and `getEntityMetadataViewUrl` as these just return one annotation from the entity passed in.
+- Updated dependencies
+  - @backstage/core-components@0.8.11
+  - @backstage/core-plugin-api@0.8.0
+  - @backstage/integration@0.7.6
+  - @backstage/plugin-permission-react@0.3.3
+
 ## 0.7.0
 
 ### Minor Changes

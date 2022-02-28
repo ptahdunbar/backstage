@@ -1,5 +1,11 @@
 # @backstage/core-plugin-api
 
+## 0.8.0
+
+### Minor Changes
+
+- a480f670c7: **BREAKING**: OAuth provider id is now required when passing a provider to `createAuthRequester`.
+
 ## 0.7.0
 
 ### Minor Changes
